@@ -1,0 +1,52 @@
+*{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+
+a:link {text-decoration:none;color:#000000}
+a:visited {text-decoration:none;color:#000000}
+a:hover {text-decoration:none;color:#000000}
+a:active {text-decoration:none;color:#000000}
+
+
+.element{
+    overflow: hidden;
+    width: 4.7%;
+    height: 8%;
+    border: 3px solid #000000;
+    position: absolute;
+    text-align: center;
+}
+
+.alcalino{
+    background-color: rgb(255, 122, 122);
+}
+.alcalinoterreo{
+    background-color: rgb(255, 222, 193);
+}
+.lantanido{
+    background-color: rgb(231, 255, 159);
+}
+.actinido{
+    background-color: rgb(255, 173, 224);
+}
+.metalTransicion{
+    background-color: rgb(149, 255, 210);
+}
+.metalBloqueP{
+    background-color: rgb(255, 224, 122);
+}
+.metaloide{
+    background-color: rgb(149, 255, 149);
+}
+.halogeno{
+    background-color: rgb(255, 255, 173);
+}
+.noMetal{
+    background-color: rgb(149, 255, 149);
+}
+.gasNoble{
+    background-color: rgb(212, 255, 255);
+}

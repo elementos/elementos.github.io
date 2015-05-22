@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>Buscar elemento</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/listaElementos.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/busqueda.js"></script>
+		<link href="css/busqueda.css" rel="stylesheet" />
+	</head>
+	<body>
+		<a id="linkBack" href="index.html"> Volver al menú principal </a>
+		<h1> Instrucciones: </h1>
+		<p> Ingrese las primeras letras del nombre del elemento.</p>
+		<p> Desplácese hacia abajo en el autocompletado para elegir la opcion deseada.</p>
+		<p> Puede buscar por nombre, por símbolo o ver los elementos de un determinado grupo o período</p>
+		<p> Para buscar por grupo o período ponga la palabra "grupo" seguida de un espacio y el numero de grupo elegido</p>
+		<p> El funcionamiento es el mismo para buscar por periodo. Ejemplo: periodo 5</p>
+		<div role="application" tabindex="-1">
+			<form autocomplete="off">
+				<div id="cb1" class="cb">
+					<form action="mostrarElemento.html" method="get">
+						<div class="cb_label">
+							<label id="cb1-label" for="cb1-edit">Buscar: </label>
+						</div>
+						<input id="cb1-edit" class="cb_edit" type="text" name="nombre"
+						tabindex="0"
+						role="combobox"
+						aria-labelledby="cb1-label"
+						aria-autocomplete="inline"
+						aria-owns="cb1-list"/>
+						<div id="cb1-button-label" class="hidden">
+							Abrir lista de elementos
+						</div>
+						<button id="cb1-button" class="cb_button" aria-labelledby="cb1-button-label" aria-controls="cb1-list" tabindex="-1">
+							&#9660;
+						</button>
+					</form>
+					<ul id="cb1-list" class="cb_list" tabindex="-1" aria-expanded="true"></ul>
+				</div>
+			</form>
+		</div>
+		</div>
+	</body>
+</html>

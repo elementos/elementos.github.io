@@ -1,0 +1,8 @@
+mejorar la ayuda arriba de la búsqueda
+cuando tocas control+ en la vista de elemento, la letra no se agranda
+añadir aparte de la búsqueda una lista en forma de arbol de los elementos, por metales, no metales, gases nobles, usando h1,h2,h3
+mejorar el autocompletado:
+-el dropdown está corrido
+-el autocompletado deja de andar en chrome (ni idea en ie)
+
+hostear en algún lado esto
