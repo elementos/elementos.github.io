@@ -77,11 +77,12 @@ var keys={
 
 function unfocus(z){
     //console.log("unfocus"+z)
-    el=document.getElementById("el"+z).parentNode;
+    el=document.getElementById("el"+z);
+    p=el.parentNode;
     if (el) {
-        el.style.borderColor="#000000";
-        el.style.borderWidth="3px";
-        el.style.padding = "3px"
+        p.style.borderColor="#000000";
+        p.style.borderWidth="3px";
+        p.style.padding = "3px"
         el.tabIndex=0;
         el.setAttribute("aria-selected","false");
     }
@@ -89,16 +90,16 @@ function unfocus(z){
 
 function focus(z){
     //console.log("focus"+z)
-    el=document.getElementById("el"+z).parentNode;
+    el=document.getElementById("el"+z)
+    p=el.parentNode;
     if (el) {
-        el.style.borderColor="#ff0000";
-        el.style.borderWidth="5px";
-        el.style.padding = "1px"
+        p.style.borderColor="#ff0000";
+        p.style.borderWidth="5px";
+        p.style.padding = "1px"
         el.tabIndex=1;
         el.setAttribute("aria-selected","true");
         el.focus();
         el.scrollIntoView();
-        console.log(document.body.scrollLeft,el.offsetLeft)
         var scrollLeft = el.offsetLeft
         if (scrollLeft<200){
             scrollLeft=10
