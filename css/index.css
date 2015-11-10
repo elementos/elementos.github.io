@@ -16,6 +16,10 @@
     font-weight: bold;
 }
 
+h1 {
+    text-align:center;
+}
+
 form label{
     display: inline-block;
     width: 173px;
