@@ -4,28 +4,29 @@
 		<title>Tabla Periódica</title>
 		<meta charset="utf-8">
 		<link href="css/index.css" rel="stylesheet">
+		<script src="js/jquery-1.10.2.min.js"  type="text/javascript"></script>
+		<script src="js/estilo.js"  type="text/javascript"></script>
 	</head>
 	<body>
-		<h1>En esta página usted dispone de dos herramientas para química.</h1>
-		
-		<h2><a href="busqueda.html">Buscador de elementos</a></h2>
-		<p>
-			Utilice esta herramienta para obtener distintos datos sobre los elementos.
-		</p>
-		
-		<h2><a href="tablaGraficaEspacios.html">Tabla periódica</a></h2>
-		<p>
-			Utilice esta herramienta para ver una tabla periódica y recorrerla utilizando el teclado.
-		</p>
-		<p>
-			Si utiliza NVDA, para desplazarse por los elementos de la tabla mantenga apretadas las teclas CAPSLOCK, SHIFT y alguna de las flechas de dirección
-		</p>
-		<p>
-			Para ver datos de un elemento particular, presione enter sobre el mismo
-		</p>
-		<h2><a href="tablaGrafica.html">Tabla periódica sin espacios</a></h2>
-		<p>
-			Utilice esta herramienta para ver una tabla periódica sin los espacios en blanco mostrados en la tabla accesible anterior.
-		</p>
+		<div id="content">
+			<div style="height:40px"></div>
+			<h1>Herramientas para conocer los elementos</h1>
+			<div style="height:40px"></div>
+			<p><a href="busqueda.html">Buscador de elementos</a><br/>
+				Permite Buscar los elementos por nombre, símbolo, grupo, etcetera.
+			</p>
+			
+			<p><a href="tablaGrafica.html">Tabla periódica</a><br/>
+				Tabla periódica para recorrer con teclado.<br/>
+				presione shift y bloquear mayúsculas para poder navegar con las teclas direccionales.
+			</p>
+
+			<div class="push"></div>
+		</div>
+		<div id = "footer">
+		<span style="white-space:nowrap;"><label><input type="checkbox" id="whiteonblack">Invertir Colores</label></span>
+		<span style="white-space:nowrap;"><label><input type="checkbox" id="uppercase">Usar mayúsculas</label></span>
+		<span style="white-space:nowrap;"><label><input type="checkbox" id="bold">Usar negritas</label></span>
+		</div>
 	</body>
 </html>

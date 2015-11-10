@@ -76,58 +76,33 @@ var keys={
 }
 
 function unfocus(z){
-    el=document.getElementById("el"+z);
+    //console.log("unfocus"+z)
+    el=document.getElementById("el"+z).parentNode;
     if (el) {
         el.style.borderColor="#000000";
         el.style.borderWidth="3px";
+        el.style.padding = "3px"
         el.tabIndex=0;
         el.setAttribute("aria-selected","false");
     }
 }
 
 function focus(z){
-    el=document.getElementById("el"+z);
+    //console.log("focus"+z)
+    el=document.getElementById("el"+z).parentNode;
     if (el) {
         el.style.borderColor="#ff0000";
         el.style.borderWidth="5px";
+        el.style.padding = "1px"
         el.tabIndex=1;
         el.setAttribute("aria-selected","true");
         el.focus();
+        el.scrollIntoView();
+        console.log(document.body.scrollLeft,el.offsetLeft)
+        var scrollLeft = el.offsetLeft
+        if (scrollLeft<200){
+            scrollLeft=10
+        }
+        document.body.scrollLeft=scrollLeft;
     }
 }
-
-function drawElem(tab,left,top,id,z){
-    var a=document.createElement("a");
-    a.style.fontSize="0px";
-    a.className="element";
-    a.style.left=left;
-    a.style.top=top;
-    a.id="el"+id;
-    if (z) {
-        elem=jsonTable[z];
-        a.href="mostrarElemento.html?z="+elem.atomic_number+"&back=tablaGrafica.html";
-        a.innerHTML=elem.name+" grupo "+getGrupo(z)+" periodo "+getPeriodo(z);
-        a.value=elem.name;
-        a.className+=(" "+clasif[getClasificacion(elem.atomic_number)]);
-        tab.appendChild(a);
-    
-        div=document.createElement("div")
-        div.innerHTML=elem.atomic_number;
-        div.setAttribute("aria-hidden",true)
-        div.tabIndex="-1";
-        div.style.fontSize="12px";
-        a.appendChild(div)
-        
-        div=document.createElement("div")
-        div.innerHTML=elem.symbol;
-        div.setAttribute("aria-hidden",true)
-        div.tabIndex="-1";
-        div.style.fontSize="20px";
-        a.appendChild(div)
-    } else{
-        a.innerHTML="en blanco";
-        tab.appendChild(a);
-    }
-
-}
-

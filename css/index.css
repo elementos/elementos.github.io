@@ -1,30 +1,100 @@
-* {
-	font-size: 2.5vmin;
-	font-family: "Arial";
-	text-transform: uppercase;
-	margin: 8px;
+.blackonwhite{
+    color: black;
+    background-color: white;
+}
+
+.whiteonblack{
+    color: white;
+    background-color: black;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+form label{
+    display: inline-block;
+    width: 173px;
+}
+
+input button{
+  color: inherit;
+  background-color: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+}
+
+
+*{
+    font-family: arial;
+    margin: 0px;
+}
+
+html,body {
+    height: 100%;
+}
+
+a{
+    font-weight: bold;
+}
+
+p{
+    line-height: 150%;
+    margin:2em;
 }
 
 section {
-	border: 2px solid red;
+    border: 2px solid red;
 }
 
 .btn{
-	padding: 8px;
+    min-width: 173px;
+    padding: 8px;
 }
 
 .btn:hover {
-	background-color:auto;
-	box-shadow: 0 0 5px black;
-
+    background-color:auto;
+    box-shadow: 0 0 5px black;
 }
 
 .inst {
-	font-weight: bold;
-	text-indent: 40px;
-	color: red;
+    font-weight: bold;
+    text-indent: 40px;
+    color: red;
 }
 
-.inputtext:focus {
-	background-color: #F0EEB9;
+#content{
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -30px; /* the bottom margin is the negative value of the footer's height */
+
+    max-width: 800px;
+    margin: 0px,auto;
+}
+
+#narrow{
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+#narrow *{
+    margin: 16px;   
+}
+
+.push{
+    height: 30px;
+}
+
+#footer{
+   min-height:30px;
+   background:#999;
+}
+
+#footer *{
+    margin: 8px;
 }

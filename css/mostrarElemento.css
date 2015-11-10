@@ -1,8 +1,32 @@
-* {
-	font-size: 2.4vmin;
-	font-family: "Arial";
+.blackonwhite{
+	color: black;
+	background-color: white;
+}
+
+.whiteonblack{
+	color: white;
+	background-color: black;
+}
+
+.uppercase{
 	text-transform: uppercase;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+input, button {
+  color: inherit;
+  background-color: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+* {
+	font-family: "Arial";
 	margin: 8px;
+	line-height: 1.5;
 }
 
 section {
@@ -16,12 +40,37 @@ section {
 .btn:hover {
 	background-color:auto;
 	box-shadow: 0 0 5px black;
+
 }
 
+.inst {
+	font-weight: bold;
+	text-indent: 40px;
+	color: red;
+}
+
+.inputtext:focus {
+	background-color: #F0EEB9;
+}
 p{
-	font-size:2.6vmin;
 	margin: 22px;
 }
 a{
 	display: block;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   margin: 0px;
+   background:#999;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
 }

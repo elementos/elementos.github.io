@@ -1,52 +1,74 @@
-*{
+.blackonwhite{
+    color: black;
+    background-color: white;
+}
+
+.whiteonblack{
+    color: white;
+    background-color: black;
+}
+
+.uppercase{
     text-transform: uppercase;
+}
+
+.bold{
     font-weight: bold;
+}
+
+*{
     font-family: "Arial";
 }
 
+td{
+    height: 50px;
+    width: 150px;
+}
 
-a:link {text-decoration:none;color:#000000}
-a:visited {text-decoration:none;color:#000000}
-a:hover {text-decoration:none;color:#000000}
-a:active {text-decoration:none;color:#000000}
-
-
-.element{
-    overflow: hidden;
-    width: 4.7%;
-    height: 8%;
-    border: 3px solid #000000;
-    position: absolute;
+.elemTitle{
+    font-size: 32;
+    width: 100%;
     text-align: center;
 }
 
-.alcalino{
-    background-color: rgb(255, 122, 122);
+.elemBody{
+    font-size: 10px;
 }
-.alcalinoterreo{
-    background-color: rgb(255, 222, 193);
+
+a{
+    height: 100%;
+    display:block;
+    text-decoration:none;
 }
-.lantanido{
-    background-color: rgb(231, 255, 159);
+
+a:link {text-decoration:none;color:inherit;}
+a:visited {text-decoration:none;color:inherit;}
+a:hover {text-decoration:none;color:inherit;}
+a:active {text-decoration:none;color:inherit;}
+
+.element{
+    overflow: hidden;
+    border: 3px solid #000000;
+    padding: 3px;
 }
-.actinido{
-    background-color: rgb(255, 173, 224);
-}
-.metalTransicion{
-    background-color: rgb(149, 255, 210);
-}
-.metalBloqueP{
-    background-color: rgb(255, 224, 122);
-}
-.metaloide{
-    background-color: rgb(149, 255, 149);
-}
-.halogeno{
-    background-color: rgb(255, 255, 173);
-}
-.noMetal{
-    background-color: rgb(149, 255, 149);
-}
-.gasNoble{
-    background-color: rgb(212, 255, 255);
-}
+
+.alcalino{                      background-color: rgb(255, 122, 122);}
+.whiteonblack .alcalino{        background-color: rgb(93, 45, 45);}
+.alcalinoterreo{                background-color: rgb(255, 222, 193);}
+.whiteonblack .alcalinoterreo{  background-color: rgb(80, 71, 63);}
+.lantanido{                     background-color: rgb(231, 255, 159);}
+.whiteonblack .lantanido{       background-color: rgb(77, 84, 54);}
+.actinido{                      background-color: rgb(255, 173, 224);}
+.whiteonblack .actinido{        background-color: rgb(64, 43, 56);}
+.metalTransicion{               background-color: rgb(149, 255, 210);}
+.whiteonblack .metalTransicion{ background-color: rgb(49, 86, 71);}
+.metalBloqueP{                  background-color: rgb(255, 224, 122);}
+.whiteonblack .metalBloqueP{    background-color: rgb(97, 85, 46);}
+.metaloide{                     background-color: rgb(149, 255, 149);}
+.whiteonblack .metaloide{       background-color: rgb(49, 82, 49);}
+.halogeno{                      background-color: rgb(255, 255, 173);}
+.whiteonblack .halogeno{        background-color: rgb(68, 68, 46);}
+.noMetal{                       background-color: rgb(149, 255, 149);}
+.whiteonblack .noMetal{         background-color: rgb(56, 101, 56);}
+.gasNoble{                      background-color: rgb(212, 255, 255);}
+.whiteonblack .gasNoble{         background-color: rgb(61, 74, 74);}
